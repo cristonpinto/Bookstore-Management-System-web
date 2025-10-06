@@ -18,7 +18,7 @@
             </div>
             <div class="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
-                <a href="#video" class="nav-link">Demo Video</a>
+                <a href="#presentation" class="nav-link">Presentation</a>
                 <a href="#features" class="nav-link">Features</a>
                 <a href="#tech" class="nav-link">Technology</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -55,37 +55,57 @@
         </div>
     </section>
 
-    <!-- Video Preview Section (Immediately Visible) -->
-    <section id="video" class="video-preview-section">
+    <!-- Google Drive Presentation Section -->
+    <section id="presentation" class="video-preview-section">
         <div class="container">
             <div class="video-preview-header">
-                <h2 class="video-title">🎬 System Demonstration Video</h2>
+                <h2 class="video-title">🎬 Video Presentation & Documentation</h2>
                 <p class="video-subtitle">
-                    Complete walkthrough of the Bookstore Management System with Ontology Integration
+                    Complete presentation materials and demonstration videos for the Bookstore Management System
                 </p>
             </div>
             
-            <!-- 🎯 YouTube Video Embedded Here - PROMINENTLY DISPLAYED -->
+            <!-- Google Drive Link Section -->
             <div class="video-preview-container">
-                <div class="main-video-wrapper">
-                    <iframe 
-                        src="https://www.youtube.com/embed/T9GYLjEQOC0?si=O4lzGwW2Pd2TZXW1&autoplay=0&rel=0"
-                        title="Bookstore Management System - CS3142 Assignment Demo - D/BCS/23/0015"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
-                    <div class="video-overlay-info">
-                        <div class="video-badge">
-                            <i class="fas fa-play-circle"></i>
-                            <span>CS3142 Assignment Demo</span>
+                <div class="drive-main-wrapper">
+                    <div class="drive-preview-card">
+                        <div class="drive-icon-section">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-content">
+                            <h3>Access Presentation Materials</h3>
+                            <p>View the complete video demonstration, documentation, and supporting materials</p>
+                            <a href="https://drive.google.com/drive/folders/1VaNDVebRlDG47In9GrTNw3D1msoA_fb_?usp=sharing" 
+                               target="_blank" 
+                               class="drive-button">
+                                <i class="fas fa-external-link-alt"></i>
+                                Open Google Drive Folder
+                            </a>
+                            <div class="drive-features">
+                                <div class="drive-feature-item">
+                                    <i class="fas fa-video"></i>
+                                    <span>Video Presentation</span>
+                                </div>
+                                <div class="drive-feature-item">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>Documentation</span>
+                                </div>
+                                <div class="drive-feature-item">
+                                    <i class="fas fa-images"></i>
+                                    <span>Screenshots</span>
+                                </div>
+                                <div class="drive-feature-item">
+                                    <i class="fas fa-code"></i>
+                                    <span>Source Code</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Quick Info Panel -->
                 <div class="video-quick-info">
-                    <h3>📋 Demo Content</h3>
+                    <h3>📋 Presentation Content</h3>
                     <ul class="quick-demo-list">
                         <li><i class="fas fa-brain"></i> Ontology Implementation</li>
                         <li><i class="fas fa-users-cog"></i> Multi-Agent System</li>
@@ -265,7 +285,128 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+
+    <style>
+        /* Google Drive Specific Styles */
+        .drive-main-wrapper {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            padding: 3px;
+            margin-bottom: 30px;
+        }
+
+        .drive-preview-card {
+            background: white;
+            border-radius: 18px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .drive-icon-section {
+            margin-bottom: 30px;
+        }
+
+        .drive-icon-section i {
+            font-size: 80px;
+            background: linear-gradient(135deg, #4285f4, #34a853, #fbbc04, #ea4335);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .drive-content h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 15px;
+        }
+
+        .drive-content p {
+            font-size: 16px;
+            color: #718096;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .drive-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .drive-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        .drive-button i {
+            font-size: 20px;
+        }
+
+        .drive-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .drive-feature-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .drive-feature-item i {
+            font-size: 30px;
+            color: #667eea;
+        }
+
+        .drive-feature-item span {
+            font-size: 14px;
+            font-weight: 500;
+            color: #4a5568;
+        }
+
+        @media (max-width: 768px) {
+            .drive-preview-card {
+                padding: 40px 20px;
+            }
+
+            .drive-icon-section i {
+                font-size: 60px;
+            }
+
+            .drive-content h3 {
+                font-size: 24px;
+            }
+
+            .drive-button {
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+
+            .drive-features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
 
     <script src="script.js"></script>
 </body>
